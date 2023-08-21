@@ -1,0 +1,29 @@
+@import "styles";
+
+.root {
+  width: 90%;
+  margin: auto;
+  padding: space(8) 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @include container();
+
+  @include breakpoint("tablet") {
+    width: 80%;
+  }
+
+  @include breakpoint("desktop") {
+    padding: space(8) 0;
+  }
+
+  & > * {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.full {
+  width: 100%;
+  @include full-width-container();
+}

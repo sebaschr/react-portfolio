@@ -1,0 +1,109 @@
+@import "styles";
+
+.root {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  background-color: color("black");
+  flex-direction: column;
+  z-index: $z-index-nav;
+
+  &--open {
+    height: 100vh;
+    position: absolute;
+  }
+
+  @include breakpoint("desktop") {
+    flex-direction: row;
+    justify-content: center;
+    color: color("white");
+  }
+}
+
+.burger {
+  margin: 0;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg,
+  g,
+  path,
+  polygon {
+    fill: white;
+    stroke: white;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: space(8);
+  @include full-width-container();
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: space(6);
+
+  @include breakpoint("desktop") {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.nav-item {
+  display: flex;
+  margin: space(4) 0;
+  transition: ease-in-out 0.3s;
+
+  & > a {
+    color: color("white");
+  }
+
+  @include breakpoint("desktop") {
+    & > a {
+      margin: 0 space(4);
+    }
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
+.mobile {
+  //mobile-container
+  &-container {
+    padding: space(8) 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+  }
+
+  //mobile-menu
+  &-menu {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 25px;
+  width: 25px;
+
+  @include breakpoint("desktop") {
+    margin: 0 space(6);
+  }
+}

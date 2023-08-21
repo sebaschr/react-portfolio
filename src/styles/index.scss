@@ -1,0 +1,13 @@
+@import "./reset.scss";
+@import "./breakpoints.scss";
+@import "./colors.scss";
+@import "./fonts.scss";
+@import "./mixins.scss";
+@import "./z-index.scss";
+@import "./spacing.scss";
+@import "./buttons.scss";
+@import "./global.scss";
+
+.sr-only {
+  display: none;
+}

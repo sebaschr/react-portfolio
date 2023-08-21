@@ -1,0 +1,9 @@
+@mixin container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+@mixin full-width-container {
+  max-width: toRem(1720px);
+  margin: auto;
+}

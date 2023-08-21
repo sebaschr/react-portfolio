@@ -1,0 +1,75 @@
+@import "styles";
+
+.root {
+  background-color: color("black");
+}
+
+.container {
+  padding: space(4);
+  color: color("white");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  a {
+    color: color("white");
+  }
+
+  @include breakpoint("desktop") {
+    padding: space(4) space(8);
+    @include full-width-container();
+  }
+}
+
+.back-to-top {
+  position: absolute;
+  top: auto;
+  bottom: space(20);
+  right: space(4);
+  background-color: color("white");
+  padding: space(4);
+  z-index: $z-index-arrow-top;
+  border-radius: 50%;
+  border: solid 1px color("grey");
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.socials {
+  & svg {
+    background-color: color("black");
+  }
+
+  & path {
+    fill: color("white");
+  }
+}
+
+.social {
+  margin: 0 space(2);
+  padding: 0;
+}
+
+.bottom-container {
+  margin-top: space(4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  margin: space(2) 0;
+  display: block;
+}
+
+.content-container {
+  margin-bottom: space(4);
+  display: flex;
+  justify-content: flex-start;
+  padding: space(8) 0 space(1);
+  flex-wrap: wrap;
+}
