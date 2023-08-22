@@ -6,14 +6,9 @@
 
 .container {
   padding: space(4);
-  color: color("white");
   display: flex;
   flex-direction: column;
   position: relative;
-
-  a {
-    color: color("white");
-  }
 
   @include breakpoint("desktop") {
     padding: space(4) space(8);

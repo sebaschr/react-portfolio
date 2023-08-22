@@ -1,4 +1,4 @@
-import { SIZES_TYPES } from 'utils/constants';
+import { COLOR_VALUES, SIZES_TYPES } from 'utils/constants';
 import { ReactNode } from 'react';
 
 // Standalone properties
@@ -7,7 +7,7 @@ export type onlyClassName = {
 }
 
 export type onlyColor = {
-    color?: string,
+    color?: COLOR_VALUES,
 }
 
 export type onlySize = {

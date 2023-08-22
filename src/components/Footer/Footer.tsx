@@ -41,87 +41,10 @@ const NavHeader = () => {
   return (
     <div className={styles.root}>
       <div className={styles.container}>
-        <div className={styles["content-container"]}>
-          <FooterColumn heading={"Footer Col Title"}>
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link One"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link Two"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link Three"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-          </FooterColumn>
-
-          <FooterColumn heading={"Footer Col Title"}>
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link One"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link Two"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link Three"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-          </FooterColumn>
-
-          <FooterColumn heading={"Footer Col Title"}>
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link One"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link Two"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-            <Link
-              href="/"
-              target={LINK_TARGET_EXTERNAL}
-              linkText="Footer Link Three"
-              className={styles.link}
-              size={SIZE_MD}
-            />
-          </FooterColumn>
-        </div>
-
-        <Spacer backgroundColor={COLOR_WHITE} />
-
         <div className={styles["bottom-container"]}>
           <Text content={"Copyright Lorem Ipsum"} size={SIZE_SM} />
           <Socials />
         </div>
-
         <Button
           variant={BUTTON_TRANSPARENT_WHITE}
           iconName="arrow-up"

@@ -3,7 +3,7 @@
 @import "styles";
 
 .root {
-  max-width: 300px;
+  flex-grow: 1;
   padding: space(8) space(6);
   border-radius: 5px;
   margin: space(1) 0;

@@ -15,6 +15,11 @@ export function getGlobalClasses(classes: string[], values: string[]): string {
         if (classToAdd === 'backgroundColor') {
             globalClasses += ` background-color--${values[index]}`;
         }
+
+
+        if (classToAdd === 'color') {
+            globalClasses += ` color--${values[index]}`;
+        }
     })
 
     return globalClasses;
@@ -49,6 +54,16 @@ export function formatYoutubeUrl(url: string): string {
         }
     }
     return url;
+}
+
+export function checkIfMediaIsLocal(mediaSrc: string): boolean {
+
+    if (mediaSrc.includes('http://') || mediaSrc.includes('https://')) {
+        return false;
+    }
+
+
+    return true;
 }
 
 

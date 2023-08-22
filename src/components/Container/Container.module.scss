@@ -4,9 +4,7 @@
   width: 90%;
   margin: auto;
   padding: space(8) 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: block;
 
   @include container();
 
@@ -26,4 +24,12 @@
 .full {
   width: 100%;
   @include full-width-container();
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapped {
+  flex-wrap: wrap;
 }

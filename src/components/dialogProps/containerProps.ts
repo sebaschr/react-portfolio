@@ -6,6 +6,7 @@ type sharedBannerProps = {
     heading: string;
     text?: string;
     backgroundColor?: COLOR_VALUES;
+    textColor?: COLOR_VALUES;
 
     primaryBtnText?: string;
     primaryBtnHref?: string;
@@ -21,7 +22,7 @@ export interface BannerProps extends onlyChildren {
     backgroundColor?: COLOR_VALUES;
 }
 
-export interface HeroBannerProps extends sharedBannerProps {
+export interface HeroBannerProps extends sharedBannerProps, onlyClassName {
     imageSrc?: string;
     imageAlt?: string;
     backgroundImageSrc?: string;
@@ -32,6 +33,8 @@ export interface HeroBannerProps extends sharedBannerProps {
 
 export interface ContainerProps extends classNameSizeandChildren {
     isFullWidth?: boolean;
+    isFlexbox?: boolean;
+    isWrapped?: boolean;
     overrideTheme?: boolean;
     theme?: THEME_VALUES
 };

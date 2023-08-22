@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styles from "./NavHeader.module.scss";
-import { Text, Link, Media, Button, Banner } from "components";
+import { Text, Link, Media, Button } from "components";
 import { reportWindowSize } from "utils/functions";
 import {
   SIZE_LG,
   SIZE_MD,
-  LINK_TARGET_EXTERNAL,
   BUTTON_TRANSPARENT,
+  LINK_TARGET_INTERNAL,
+  SIZE_SM,
 } from "utils/constants";
 import cx from "classnames";
-
-// TO DO:Nav Menu Items Submenus & Animations
 
 const NavHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,46 +32,45 @@ const NavHeader = () => {
       <ul className={styles["nav-list"]}>
         <li className={styles["nav-item"]}>
           <Link
-            target={LINK_TARGET_EXTERNAL}
+            target={LINK_TARGET_INTERNAL}
             href="/"
-            linkText="Nav Item One"
-            size={SIZE_MD}
+            linkText="Home"
+            size={SIZE_SM}
           />
         </li>
         <li className={styles["nav-item"]}>
           <Link
-            target={LINK_TARGET_EXTERNAL}
-            href="/"
-            linkText="Nav Item Two"
-            size={SIZE_MD}
+            target={LINK_TARGET_INTERNAL}
+            href="/about"
+            linkText="About Me"
+            size={SIZE_SM}
           />
         </li>
         <li className={styles["nav-item"]}>
           <Link
-            target={LINK_TARGET_EXTERNAL}
-            href="/"
-            linkText="Nav Item Three"
-            size={SIZE_MD}
+            target={LINK_TARGET_INTERNAL}
+            href="/experience"
+            linkText="Experience"
+            size={SIZE_SM}
+          />
+        </li>
+        <li className={styles["nav-item"]}>
+          <Link
+            target={LINK_TARGET_INTERNAL}
+            href="/photography"
+            linkText="Photography"
+            size={SIZE_SM}
+          />
+        </li>
+        <li className={styles["nav-item"]}>
+          <Link
+            target={LINK_TARGET_INTERNAL}
+            href="/contact"
+            linkText="Contact"
+            size={SIZE_SM}
           />
         </li>
       </ul>
-    );
-  };
-
-  const Logo = () => {
-    return (
-      <Link
-        href="/"
-        target={LINK_TARGET_EXTERNAL}
-        className={styles["logo-container"]}
-      >
-        <Media
-          src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-900x900.png"
-          altText="logo"
-          className={styles.logo}
-        />
-        <Text className="sr-only" content="Logo" />
-      </Link>
     );
   };
 
@@ -82,36 +80,9 @@ const NavHeader = () => {
         [styles["root--open"]]: isOpen && !isDesktop,
       })}
     >
-      <Banner backgroundColor="grey">
-        <Text content="This is a banner" />
-      </Banner>
-      {isDesktop ? (
-        <div className={styles["nav-container"]}>
-          <Logo />
-          <NavList />
-        </div>
-      ) : (
-        <div className={styles["mobile-menu-container"]}>
-          <div className={styles["mobile-container"]}>
-            <Logo />
-            <Button
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-              className={styles.burger}
-              iconName={isOpen ? "x" : "burger"}
-              variant={BUTTON_TRANSPARENT}
-              iconSize={isOpen ? SIZE_MD : SIZE_LG}
-            />
-          </div>
-
-          {isOpen && (
-            <div className={styles["mobile-menu"]}>
-              <NavList />
-            </div>
-          )}
-        </div>
-      )}
+      <div className={styles["nav-container"]}>
+        <NavList />
+      </div>
     </nav>
   );
 };

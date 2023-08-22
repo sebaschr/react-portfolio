@@ -8,12 +8,14 @@ import {
   BUTTON_PRIMARY,
   BUTTON_SECONDARY,
   BOOLEAN_FALSE,
+  COLOR_BLACK,
 } from "utils/constants";
 import cx from "classnames";
 import { HeroBannerPropTypes } from "components/dialogProps";
 import { getGlobalClasses } from "utils/functions";
 
 const HeroBanner = ({
+  className,
   heading,
   text,
   alignment = ALIGNMENT_CENTER,
@@ -29,6 +31,7 @@ const HeroBanner = ({
   secondaryBtnText,
   imageFirst = BOOLEAN_FALSE,
   hideOnMobile = BOOLEAN_FALSE,
+  textColor = COLOR_BLACK,
 }: HeroBannerPropTypes) => {
   const globalClasses = getGlobalClasses(
     ["backgroundColor"],
@@ -40,7 +43,7 @@ const HeroBanner = ({
     (secondaryBtnHref && secondaryBtnText);
 
   return (
-    <div className={cx(styles.root)}>
+    <div className={cx(styles.root, className)}>
       {backgroundImageSrc && (
         <Media
           isBackground
@@ -63,8 +66,14 @@ const HeroBanner = ({
             content={heading}
             className={styles.title}
             alignment={alignment}
+            color={textColor}
           />
-          <Text content={text} size={SIZE_XL} alignment={alignment} />
+          <Text
+            content={text}
+            size={SIZE_XL}
+            alignment={alignment}
+            color={textColor}
+          />
 
           {validBtn && (
             <div

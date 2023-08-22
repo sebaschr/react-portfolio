@@ -1,4 +1,4 @@
-import { noColor } from "./sharedProps";
+import { sharedProps } from "./sharedProps";
 import { BUTTON_VARIANTS, LINK_TARGETS, ICON_NAMES, SIZES_TYPES } from "utils/constants";
 
 type sharedLinkProps = {
@@ -7,12 +7,12 @@ type sharedLinkProps = {
     iconSize?: SIZES_TYPES;
 }
 
-export interface LinkProps extends sharedLinkProps, noColor {
+export interface LinkProps extends sharedLinkProps, sharedProps {
     href: string;
     target: LINK_TARGETS;
 }
 
-export interface ButtonProps extends sharedLinkProps, noColor {
+export interface ButtonProps extends sharedLinkProps, sharedProps {
     variant: BUTTON_VARIANTS;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     label?: string;

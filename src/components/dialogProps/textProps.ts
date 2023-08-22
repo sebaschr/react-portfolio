@@ -1,5 +1,5 @@
 import { classNameColorandSize } from './sharedProps';
-import { ALIGNMENTS, HEADING_STYLES } from "utils/constants";
+import { ALIGNMENTS, HEADING_STYLES, COLOR_VALUES } from "utils/constants";
 
 interface sharedTextProps extends classNameColorandSize {
     content: string;

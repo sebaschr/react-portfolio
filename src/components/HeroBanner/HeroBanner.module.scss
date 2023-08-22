@@ -35,8 +35,9 @@ $filter-opacity: 0.35;
     flex-direction: column;
 
     @include breakpoint("desktop") {
+      align-items: center;
       flex-direction: row;
-      min-height: 20rem;
+      min-height: 30rem;
       @include full-width-container();
     }
   }

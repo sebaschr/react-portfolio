@@ -37,3 +37,29 @@
     background-color: color("yellow");
   }
 }
+
+.color {
+  &--black {
+    color: color("black");
+  }
+
+  &--white {
+    color: color("white");
+  }
+
+  &--grey {
+    color: color("grey");
+  }
+
+  &--grey-light {
+    color: color("grey-light");
+  }
+
+  &--grey-opacity {
+    color: color("grey-opacity");
+  }
+
+  &--yellow {
+    color: color("yellow");
+  }
+}

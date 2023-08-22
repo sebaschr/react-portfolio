@@ -10,16 +10,20 @@ const Text = ({
   content,
   className,
   size = SIZE_MD,
+  color,
 }: TextPropTypes) => {
-  const globalClasses = getGlobalClasses(["alignment"], [alignment]);
+  const globalClasses = getGlobalClasses(
+    ["alignment", "color"],
+    [alignment, color]
+  );
 
   return (
     <p
       className={cx(
-        globalClasses,
         styles.root,
         styles[`size--${size}`],
-        className
+        className,
+        globalClasses
       )}
     >
       {content}

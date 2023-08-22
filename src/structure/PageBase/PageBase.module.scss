@@ -1,0 +1,37 @@
+@import "styles";
+
+.main-container {
+  border: solid 1px black;
+  position: absolute;
+  max-width: none;
+  height: 95%;
+  margin: auto;
+  width: 97%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  padding: 0;
+}
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+}
+
+.heading {
+  width: 100%;
+  padding: 2rem;
+  font-size: 5rem;
+  border-bottom: solid 1px black;
+
+  @include breakpoint("desktop") {
+    font-size: 10rem;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { SIZE_LG, SIZE_SM } from "utils/constants";
+import { SIZE_LG, SIZE_SM, COLOR_BLACK } from "utils/constants";
 import styles from "./Link.module.scss";
 import { Text, Icon } from "components";
 import { LinkPropTypes } from "components/dialogProps";
@@ -14,6 +14,7 @@ const Link = ({
   iconSize = SIZE_SM,
   iconName,
   className,
+  color = COLOR_BLACK,
 }: LinkPropTypes) => {
   const noText: boolean = children !== null || linkText != null;
 
@@ -21,7 +22,7 @@ const Link = ({
     <a className={cx(styles.root, className)} href={href} target={target}>
       {noText && children
         ? children
-        : noText && <Text content={linkText} size={size} />}
+        : noText && <Text content={linkText} size={size} color={color} />}
       {iconName && <Icon name={iconName} size={iconSize} />}
     </a>
   );

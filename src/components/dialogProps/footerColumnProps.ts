@@ -1,5 +1,5 @@
-import { onlyChildren } from "./sharedProps";
+import { colorAndChildren, onlyChildren } from "./sharedProps";
 
-export interface FooterColumnProps extends onlyChildren {
+export interface FooterColumnProps extends colorAndChildren {
     heading: string;
 }

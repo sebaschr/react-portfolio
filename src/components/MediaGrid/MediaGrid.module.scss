@@ -3,11 +3,7 @@
 .root {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
-
-  & > * {
-    height: auto;
-  }
+  justify-content: center;
 
   &--spaced {
     & > * {
