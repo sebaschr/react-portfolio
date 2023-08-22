@@ -12,29 +12,35 @@ import {
 } from "./structure";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/about",
-    element: <AboutPage />,
-  },
-  {
-    path: "/experience",
-    element: <ExperiencePage />,
-  },
-  {
-    path: "/photography",
-    element: <PhotographyPage />,
-  },
-  {
-    path: "/contact",
-    element: <ContactPage />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/*",
+      element: <ErrorPage />,
+    },
+    {
+      path: "/about",
+      element: <AboutPage />,
+    },
+    {
+      path: "/experience",
+      element: <ExperiencePage />,
+    },
+    {
+      path: "/photography",
+      element: <PhotographyPage />,
+    },
+    {
+      path: "/contact",
+      element: <ContactPage />,
+    },
+  ],
+  { basename: "/react-portfolio" }
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
