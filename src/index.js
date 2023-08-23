@@ -11,28 +11,6 @@ import {
   ContactPage,
 } from "./structure";
 import { Routes, Route, HashRouter } from "react-router-dom";
-// const router = createHashRouter([
-//   {
-//     path: "/",
-//     element: <HomePage />,
-//   },
-//   {
-//     path: "/about",
-//     element: <AboutPage />,
-//   },
-//   {
-//     path: "/experience",
-//     element: <ExperiencePage />,
-//   },
-//   {
-//     path: "/photography",
-//     element: <PhotographyPage />,
-//   },
-//   {
-//     path: "/contact",
-//     element: <ContactPage />,
-//   },
-// ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -42,6 +20,10 @@ root.render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/photography" element={<PhotographyPage />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

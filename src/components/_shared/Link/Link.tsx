@@ -18,6 +18,10 @@ const Link = ({
 }: LinkPropTypes) => {
   const noText: boolean = children !== null || linkText != null;
 
+  if (!href.includes("http")) {
+    href = process.env.REACT_APP_HOME_PAGE + "/#" + href;
+  }
+
   return (
     <a className={cx(styles.root, className)} href={href} target={target}>
       {noText && children
