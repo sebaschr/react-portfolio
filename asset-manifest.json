@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/sebaschr/react-portfolio/static/css/main.2660b206.css",
-    "main.js": "/sebaschr/react-portfolio/static/js/main.ab925375.js",
-    "static/js/787.44e83b79.chunk.js": "/sebaschr/react-portfolio/static/js/787.44e83b79.chunk.js",
-    "static/media/RobotoMono-BoldItalic.ttf": "/sebaschr/react-portfolio/static/media/RobotoMono-BoldItalic.bcd926c36a85f46b3eeb.ttf",
-    "static/media/RobotoMono-Italic.ttf": "/sebaschr/react-portfolio/static/media/RobotoMono-Italic.2d42f17317bca2bd3860.ttf",
-    "static/media/RobotoMono-LightItalic.ttf": "/sebaschr/react-portfolio/static/media/RobotoMono-LightItalic.5f7ce26f769b4456ae6f.ttf",
-    "static/media/RobotoMono-Light.ttf": "/sebaschr/react-portfolio/static/media/RobotoMono-Light.c22b58a08fc070148e2d.ttf",
-    "static/media/RobotoMono-Bold.ttf": "/sebaschr/react-portfolio/static/media/RobotoMono-Bold.00dee75ee52cf07cfb24.ttf",
-    "static/media/RobotoMono-Regular.ttf": "/sebaschr/react-portfolio/static/media/RobotoMono-Regular.28198c367ffb8695d481.ttf",
-    "static/media/spain-flag.svg": "/sebaschr/react-portfolio/static/media/spain-flag.bd3fd9a0ccf7ed246e3d6ed603f00867.svg",
-    "static/media/uk-flag.svg": "/sebaschr/react-portfolio/static/media/uk-flag.8411a74a2d01099b9cd827dcba16a600.svg",
-    "static/media/github.svg": "/sebaschr/react-portfolio/static/media/github.39a426071ee083647048f13456c5254d.svg",
-    "static/media/arrow-up.svg": "/sebaschr/react-portfolio/static/media/arrow-up.4073c87ad2674fd0334a18bf0ea89ca7.svg",
-    "static/media/x.svg": "/sebaschr/react-portfolio/static/media/x.9324c0a1f3553314d799ac05ac8e56e6.svg",
-    "index.html": "/sebaschr/react-portfolio/index.html",
-    "static/media/burger-icon.svg": "/sebaschr/react-portfolio/static/media/burger-icon.cda3f71c20e9c2932fe55b65d6ea352d.svg",
-    "static/media/arrow-down.svg": "/sebaschr/react-portfolio/static/media/arrow-down.04b1f0952c57022b558636ace50597aa.svg",
-    "static/media/linked-in.svg": "/sebaschr/react-portfolio/static/media/linked-in.846dcfdb81242ef54dfc3973f3531f31.svg",
-    "main.2660b206.css.map": "/sebaschr/react-portfolio/static/css/main.2660b206.css.map",
-    "main.ab925375.js.map": "/sebaschr/react-portfolio/static/js/main.ab925375.js.map",
-    "787.44e83b79.chunk.js.map": "/sebaschr/react-portfolio/static/js/787.44e83b79.chunk.js.map"
+    "main.css": "/react-portfolio/static/css/main.8b618055.css",
+    "main.js": "/react-portfolio/static/js/main.3ee3a108.js",
+    "static/js/787.44e83b79.chunk.js": "/react-portfolio/static/js/787.44e83b79.chunk.js",
+    "static/media/RobotoMono-BoldItalic.ttf": "/react-portfolio/static/media/RobotoMono-BoldItalic.bcd926c36a85f46b3eeb.ttf",
+    "static/media/RobotoMono-Italic.ttf": "/react-portfolio/static/media/RobotoMono-Italic.2d42f17317bca2bd3860.ttf",
+    "static/media/RobotoMono-LightItalic.ttf": "/react-portfolio/static/media/RobotoMono-LightItalic.5f7ce26f769b4456ae6f.ttf",
+    "static/media/RobotoMono-Light.ttf": "/react-portfolio/static/media/RobotoMono-Light.c22b58a08fc070148e2d.ttf",
+    "static/media/RobotoMono-Bold.ttf": "/react-portfolio/static/media/RobotoMono-Bold.00dee75ee52cf07cfb24.ttf",
+    "static/media/RobotoMono-Regular.ttf": "/react-portfolio/static/media/RobotoMono-Regular.28198c367ffb8695d481.ttf",
+    "static/media/spain-flag.svg": "/react-portfolio/static/media/spain-flag.bd3fd9a0ccf7ed246e3d6ed603f00867.svg",
+    "static/media/uk-flag.svg": "/react-portfolio/static/media/uk-flag.8411a74a2d01099b9cd827dcba16a600.svg",
+    "static/media/github.svg": "/react-portfolio/static/media/github.39a426071ee083647048f13456c5254d.svg",
+    "static/media/arrow-up.svg": "/react-portfolio/static/media/arrow-up.4073c87ad2674fd0334a18bf0ea89ca7.svg",
+    "static/media/x.svg": "/react-portfolio/static/media/x.9324c0a1f3553314d799ac05ac8e56e6.svg",
+    "static/media/burger-icon.svg": "/react-portfolio/static/media/burger-icon.cda3f71c20e9c2932fe55b65d6ea352d.svg",
+    "index.html": "/react-portfolio/index.html",
+    "static/media/arrow-down.svg": "/react-portfolio/static/media/arrow-down.04b1f0952c57022b558636ace50597aa.svg",
+    "static/media/linked-in.svg": "/react-portfolio/static/media/linked-in.846dcfdb81242ef54dfc3973f3531f31.svg",
+    "main.8b618055.css.map": "/react-portfolio/static/css/main.8b618055.css.map",
+    "main.3ee3a108.js.map": "/react-portfolio/static/js/main.3ee3a108.js.map",
+    "787.44e83b79.chunk.js.map": "/react-portfolio/static/js/787.44e83b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2660b206.css",
-    "static/js/main.ab925375.js"
+    "static/css/main.8b618055.css",
+    "static/js/main.3ee3a108.js"
   ]
 }
