@@ -10,9 +10,9 @@ import {
   PhotographyPage,
   ContactPage,
 } from "./structure";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, HashRouter } from "react-router-dom";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: "/",
@@ -40,7 +40,7 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter router={router} />
   </React.StrictMode>
 );
 
