@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./NavHeader.module.scss";
-import { Text, Link, Media, Button } from "components";
+import { Link, Button } from "components";
 import { reportWindowSize } from "utils/functions";
 import {
-  SIZE_LG,
-  SIZE_MD,
-  BUTTON_TRANSPARENT,
   LINK_TARGET_INTERNAL,
   SIZE_SM,
+  BUTTON_TRANSPARENT,
+  SIZE_MD,
+  SIZE_LG,
 } from "utils/constants";
 import cx from "classnames";
 
@@ -80,9 +80,30 @@ const NavHeader = () => {
         [styles["root--open"]]: isOpen && !isDesktop,
       })}
     >
-      <div className={styles["nav-container"]}>
-        <NavList />
-      </div>
+      {isDesktop ? (
+        <div className={styles["nav-container"]}>
+          <NavList />
+        </div>
+      ) : (
+        <div className={styles["mobile-container"]}>
+          <Button
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className={cx(styles.burger, {
+              [styles["burger--open"]]: isOpen,
+            })}
+            iconName={"arrow-up"}
+            variant={BUTTON_TRANSPARENT}
+            iconSize={isOpen ? SIZE_MD : SIZE_LG}
+          />
+          {isOpen && (
+            <div>
+              <NavList />
+            </div>
+          )}
+        </div>
+      )}
     </nav>
   );
 };

@@ -82,3 +82,8 @@ export function checkIfValidMedia(mediaSrc: string): string {
 
     return null;
 }
+
+export function formatDate(date: Date): string {
+
+    return `${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()} `;
+}

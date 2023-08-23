@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     },
     {
       path: "/*",
-      element: <HomePage />,
+      element: <ErrorPage />,
     },
     {
       path: "/about",
@@ -39,7 +39,7 @@ const router = createBrowserRouter(
       element: <ContactPage />,
     },
   ],
-  { basename: "/react-portfolio" }
+  { basename: "/" }
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

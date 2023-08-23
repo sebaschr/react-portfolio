@@ -19,15 +19,15 @@ const PageBase = ({
 
   return (
     <>
-      <NavHeader />
       <Container isFullWidth className={styles["main-container"]}>
+        <NavHeader />
         <div className={styles.root}>
           <Heading
             content={headingText}
             headingStyle="h1"
             className={styles.heading}
           />
-          {children}
+          <div className={styles.container}>{children}</div>
         </div>
       </Container>
     </>

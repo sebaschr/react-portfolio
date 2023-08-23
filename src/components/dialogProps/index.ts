@@ -2,7 +2,7 @@ import { CardProps, CardContainerProps } from './cardProps';
 import { ButtonProps, LinkProps } from './linkProps';
 import { HeadingProps, TextProps } from './textProps';
 import { IconProps, ImageProps, VideoProps, EmbedProps } from './mediaProps';
-import { BannerProps, ContainerProps, HeroBannerProps, PageBackgroundProps, SpacerProps, MediaGridProps } from './containerProps';
+import { BannerProps, ContainerProps, HeroBannerProps, PageBackgroundProps, SpacerProps, MediaGridProps, CategoryBubbleProps } from './containerProps';
 import { FooterColumnProps } from './footerColumnProps';
 
 export type CardPropTypes = CardProps;
@@ -27,3 +27,4 @@ export type PageBackgroundPropTypes = PageBackgroundProps;
 export type SpacerPropTypes = SpacerProps;
 
 export type FooterColumnPropTypes = FooterColumnProps;
+export type CategoryBubblePropTypes = CategoryBubbleProps;

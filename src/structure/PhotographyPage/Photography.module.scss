@@ -1,1 +1,20 @@
 @import "styles";
+
+$text-padding: 1rem;
+
+.grid {
+  overflow: scroll;
+  justify-content: flex-start;
+  padding: 0;
+  height: 100%;
+}
+
+.text {
+  padding: $text-padding;
+  width: calc(50% - $text-padding * 2);
+  font-size: 1.75rem;
+
+  @include breakpoint("desktop") {
+    width: calc(25% - $text-padding * 2);
+  }
+}

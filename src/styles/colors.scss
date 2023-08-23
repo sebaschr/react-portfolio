@@ -5,9 +5,11 @@ $colors: (
   "red": red,
   "light-blue": cyan,
   //Greys
-  "grey": #c0c0c0,
+  "grey": #838383,
   "grey-opacity": #c0c0c055,
   "grey-light": #c0c0c0,
+  "cyan": #0dafc1,
+  "purple": #992499,
 );
 
 @function color($color-key) {

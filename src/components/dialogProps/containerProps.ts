@@ -22,6 +22,12 @@ export interface BannerProps extends onlyChildren {
     backgroundColor?: COLOR_VALUES;
 }
 
+export interface CategoryBubbleProps extends onlyClassName {
+    backgroundColor?: COLOR_VALUES;
+    text: string;
+}
+
+
 export interface HeroBannerProps extends sharedBannerProps, onlyClassName {
     imageSrc?: string;
     imageAlt?: string;

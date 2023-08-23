@@ -29,13 +29,16 @@ const AboutPage = () => {
         <div className={styles.content}>
           <div className={styles["container--left"]}>
             <RepeatComponent cycles={3}>
-              <Heading content={"Hi my name is Seb"} headingStyle="h4" />
+              <Heading
+                content={"Hi my name is Seb, I am a web developer."}
+                headingStyle="h4"
+              />
             </RepeatComponent>
           </div>
 
           <div className={styles["container--right"]}>
             <Text
-              content={`SINCE STARTING MY DEVELOPMENT JOURNEY I'VE FALLED IN LOVE WITH BUILDING THE MOST BEAUTIFUL AND UNIQUE WEBSITES. I AM CURRENTLY PASSIONATE ABOUT BUILDING NOT ONLY EYE-CATCHING, BUT USEFUL WEBSITES WITHOUT FORGETTING THE IMPORTANCE OF ACCESIBILITY. `}
+              content={`SINCE STARTING MY DEVELOPMENT JOURNEY I'VE FELL IN LOVE WITH BUILDING THE MOST BEAUTIFUL AND UNIQUE WEBSITES. I AM CURRENTLY PASSIONATE ABOUT BUILDING NOT ONLY EYE-CATCHING, BUT USEFUL WEBSITES WITHOUT FORGETTING THE IMPORTANCE OF ACCESIBILITY. `}
               size={SIZE_XL}
             />
 
@@ -45,7 +48,7 @@ const AboutPage = () => {
             />
 
             <Text
-              content={`CURRENTLY WORKING ON MY OWN CLOTHING BRAND AND AN INNOVATION COMMERCE. I HOPE TO DEVELOP THE WEBSITES MYSELF ( WITH THE HELP FROM SOME FRIENDS ), WHILE TAKING NEW CHALLENGES BE IT AS A FREELANCER OR AS A WORKER IN A COMPANY. `}
+              content={`CURRENTLY WORKING ON MY OWN CLOTHING BRAND AND AN INNOVATIVE COMMERCE. I HOPE TO DEVELOP THESE PROJECTS MYSELF, WHILE TAKING NEW CHALLENGES BE IT AS A FREELANCER OR AS A WORKER IN A COMPANY. `}
               size={SIZE_XL}
             />
           </div>
@@ -57,11 +60,11 @@ const AboutPage = () => {
           />
           <Media
             src="https://i.imgur.com/M7Z06VG.jpg"
-            className={cx(styles["image--center"])}
+            className={cx(styles.image, styles["image--center"])}
           />
           <Media
             src="https://i.imgur.com/M7Z06VG.jpg"
-            className={cx(styles["image--bottom"])}
+            className={cx(styles.image, styles["image--bottom"])}
           />
         </div>
       </div>

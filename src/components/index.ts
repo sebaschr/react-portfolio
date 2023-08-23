@@ -10,9 +10,11 @@ export { default as Banner } from './_shared/Banner';
 export { default as Spacer } from './_shared/Spacer';
 export { default as Embed } from './_shared/Embed';
 export { default as Media } from './_shared/Media';
+export { default as CategoryBubble } from './_shared/CategoryBubble';
 
 export { default as HeroBanner } from './HeroBanner/HeroBanner';
 export { default as NavHeader } from './NavHeader/NavHeader';
 export { default as PageBackground } from './PageBackground/PageBackground';
 export { default as Container } from './Container/Container';
 export { default as Footer } from './Footer/Footer';
+export { default as MediaGrid } from './MediaGrid/MediaGrid';

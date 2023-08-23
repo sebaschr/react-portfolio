@@ -1,0 +1,32 @@
+@import "styles";
+
+.bubble {
+  width: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.4rem 0.4rem 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  @include breakpoint("desktop") {
+    margin: 0.5rem 0.2rem 0;
+    padding: 0.4rem 1.4rem;
+  }
+}
+
+.text {
+  @include breakpoint("desktop") {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
