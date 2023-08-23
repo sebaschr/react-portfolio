@@ -19,10 +19,6 @@ const router = createBrowserRouter(
       element: <HomePage />,
     },
     {
-      path: "/*",
-      element: <ErrorPage />,
-    },
-    {
       path: "/about",
       element: <AboutPage />,
     },
@@ -39,12 +35,12 @@ const router = createBrowserRouter(
       element: <ContactPage />,
     },
   ],
-  { basename: "/" }
+  { basename: "/react-portfolio" }
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} basename={"/react-portfolio"} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
