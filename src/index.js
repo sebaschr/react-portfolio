@@ -10,37 +10,35 @@ import {
   PhotographyPage,
   ContactPage,
 } from "./structure";
-import { createHashRouter, HashRouter } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/about",
+    element: <AboutPage />,
+  },
+  {
+    path: "/experience",
+    element: <ExperiencePage />,
+  },
+  {
+    path: "/photography",
+    element: <PhotographyPage />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
+  },
+]);
 
-const router = createHashRouter(
-  [
-    {
-      path: "/",
-      element: <HomePage />,
-    },
-    {
-      path: "/about",
-      element: <AboutPage />,
-    },
-    {
-      path: "/experience",
-      element: <ExperiencePage />,
-    },
-    {
-      path: "/photography",
-      element: <PhotographyPage />,
-    },
-    {
-      path: "/contact",
-      element: <ContactPage />,
-    },
-  ],
-  { basename: "/react-portfolio" }
-);
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <HashRouter router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
