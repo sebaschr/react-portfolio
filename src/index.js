@@ -10,35 +10,40 @@ import {
   PhotographyPage,
   ContactPage,
 } from "./structure";
-import { createHashRouter, RouterProvider } from "react-router-dom";
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/about",
-    element: <AboutPage />,
-  },
-  {
-    path: "/experience",
-    element: <ExperiencePage />,
-  },
-  {
-    path: "/photography",
-    element: <PhotographyPage />,
-  },
-  {
-    path: "/contact",
-    element: <ContactPage />,
-  },
-]);
+import { Routes, Route, HashRouter } from "react-router-dom";
+// const router = createHashRouter([
+//   {
+//     path: "/",
+//     element: <HomePage />,
+//   },
+//   {
+//     path: "/about",
+//     element: <AboutPage />,
+//   },
+//   {
+//     path: "/experience",
+//     element: <ExperiencePage />,
+//   },
+//   {
+//     path: "/photography",
+//     element: <PhotographyPage />,
+//   },
+//   {
+//     path: "/contact",
+//     element: <ContactPage />,
+//   },
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 );
 
