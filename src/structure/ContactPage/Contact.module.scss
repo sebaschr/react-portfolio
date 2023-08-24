@@ -1,5 +1,11 @@
 @import "styles";
 
+.container{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .media {
   width: 50%;
   display: none;
@@ -33,6 +39,7 @@
     display: block;
     align-items: center;
     padding: 2rem 0.5rem;
+    flex-grow:1;
 
     @include breakpoint("desktop") {
       display: flex;
@@ -122,4 +129,26 @@
 .social:hover {
   text-decoration: underline;
   color: black;
+}
+
+
+.loader{
+  background-color:rgba(0,0,0,0.5);
+  z-index:99;
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.success{
+  display:flex;
+  flex-grow:1;
+  height:100%;
+  width:100%;
 }

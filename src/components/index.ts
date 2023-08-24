@@ -10,7 +10,9 @@ export { default as Banner } from './_shared/Banner';
 export { default as Spacer } from './_shared/Spacer';
 export { default as Embed } from './_shared/Embed';
 export { default as Media } from './_shared/Media';
+export { default as Loader } from './_shared/Loader';
 export { default as CategoryBubble } from './_shared/CategoryBubble';
+
 
 export { default as HeroBanner } from './HeroBanner/HeroBanner';
 export { default as NavHeader } from './NavHeader/NavHeader';

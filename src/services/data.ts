@@ -5,7 +5,7 @@ export const work_experiences: Job[] = [
         company: "Konrad Group",
         position: "Software Developer",
         description: null,
-        jobDescription: "In Konrad, I was a full stack software engineer performing different tasks throughout different projects in the banking and transportation industry. The main tech stack that I used in these projects was Adobe Experience Manager with Java in the backend and React in the frontend.  I was in charge of different tasks depending on the project, such as maintenance and changes required by the client, as well as deployments for different websites, migrations from older versions of AEM to AEM cloud, and from JavaScript to Typescript in other projects. ",
+        jobDescription: "In Konrad, I was a full stack software engineer performing different tasks throughout different projects in the banking and transportation industries. The main tech stack that I used in these projects was Adobe Experience Manager with Java in the backend and React in the frontend.  I was in charge of different tasks depending on the project, such as maintenance, deployments for different websites, migrations from older versions of AEM to AEM cloud, and from JavaScript to Typescript in other projects. ",
         from: new Date("2021-09-14"),
         to: new Date("2023-05-15"),
         skills: [1, 2, 3, 4, 8, 9, 11, 12],
