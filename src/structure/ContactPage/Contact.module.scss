@@ -1,1 +1,125 @@
 @import "styles";
+
+.media {
+  width: 50%;
+  display: none;
+
+  @include breakpoint("desktop") {
+    display: flex;
+  }
+
+  &-container {
+    width: 40%;
+  }
+}
+
+.heading {
+  padding: 2rem 0.5rem;
+
+  @include breakpoint("desktop") {
+    padding: 2rem;
+  }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-container {
+    margin-top: 2rem;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    display: block;
+    align-items: center;
+    padding: 2rem 0.5rem;
+
+    @include breakpoint("desktop") {
+      display: flex;
+      height: auto;
+      padding: 2rem;
+    }
+  }
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label {
+  width: 100%;
+  margin: 0.5rem 0;
+
+  @include breakpoint("desktop") {
+    width: 17%;
+    margin: 0;
+  }
+}
+
+.input {
+  flex-grow: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  resize: none;
+
+  &--error {
+    border: solid 1px red;
+  }
+
+  &-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.error {
+  width: 100%;
+  text-align: left;
+
+  @include breakpoint("desktop") {
+    text-align: right;
+  }
+}
+
+.submit {
+  @include text-basic();
+  @include btn-base();
+  @include primary-btn();
+  padding: space(4) space(8);
+  margin-top: space(4);
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+.link-container {
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.textarea {
+  height: 10rem;
+}
+
+.social:hover {
+  text-decoration: underline;
+  color: black;
+}

@@ -11,18 +11,42 @@
     position: absolute;
     justify-content: flex-end;
   }
-
-  &--open {
-    & .mobile-container {
-      background-color: black;
-    }
-  }
 }
 
 .nav-container {
   display: flex;
   justify-content: flex-end;
-  padding: space(8);
+  padding: space(2);
+
+  @include breakpoint("desktop") {
+    padding: space(8);
+  }
+}
+
+.mobile-menu {
+  position: relative;
+  width: 100vw;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: height 0.5s ease-in-out;
+  visibility: hidden;
+  height: 0;
+
+  &--visible {
+    height: 100vh;
+    visibility: visible;
+  }
+}
+
+.nav-mobile-item {
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  padding-bottom: 0.25rem;
+  z-index: 1;
 }
 
 .nav-list {
@@ -59,23 +83,22 @@
 
   @include breakpoint("desktop") {
     margin: 0;
-  }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 5%;
+      top: 50%;
+      background-color: black;
+      transition: 300ms ease-in-out;
+      pointer-events: none;
+    }
 
-  &:after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 5%;
-    top: 50%;
-    background-color: black;
-    transition: 300ms ease-in-out;
-    pointer-events: none;
-  }
-
-  &:hover:after,
-  &--selected {
-    width: 90%;
+    &:hover:after,
+    &--selected {
+      width: 90%;
+    }
   }
 
   @include breakpoint("desktop") {
@@ -84,41 +107,5 @@
         margin: 0 space(4);
       }
     }
-  }
-}
-
-.mobile-container {
-  position: absolute;
-  background-color: transparent;
-  svg,
-  g,
-  path {
-    color: black !important;
-    fill: black !important;
-    stroke: black !important;
-  }
-  width: 100%;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    color: white !important;
-    fill: white !important;
-    stroke: white !important;
-  }
-}
-
-.burger--open {
-  transform: rotate(180deg);
-
-  svg,
-  g,
-  path {
-    color: white !important;
-    fill: white !important;
-    stroke: white !important;
   }
 }

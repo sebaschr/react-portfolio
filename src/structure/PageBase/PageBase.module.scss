@@ -42,6 +42,14 @@
 
 .container {
   display: flex;
-  height: calc(100% - 95px);
-  overflow: scroll;
+  height: calc(100% - 145px);
+  overflow-y: scroll;
+
+  @include breakpoint("tablet") {
+    height: calc(100% - 195px);
+  }
+
+  @include breakpoint("desktop") {
+    height: calc(100% - 95px);
+  }
 }

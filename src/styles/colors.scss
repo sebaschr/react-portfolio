@@ -2,7 +2,6 @@ $colors: (
   "black": #000,
   "white": #fff,
   "yellow": yellow,
-  "red": red,
   "light-blue": cyan,
   //Greys
   "grey": #838383,
@@ -10,6 +9,7 @@ $colors: (
   "grey-light": #c0c0c0,
   "cyan": #0dafc1,
   "purple": #992499,
+  "red": red,
 );
 
 @function color($color-key) {

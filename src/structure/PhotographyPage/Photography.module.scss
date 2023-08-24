@@ -5,14 +5,34 @@ $text-padding: 1rem;
 .grid {
   overflow: scroll;
   justify-content: flex-start;
-  padding: 0;
+  padding: 0.25rem;
   height: 100%;
+  justify-content: flex-start;
+  margin: auto;
+
+  & img {
+    padding-bottom: 0.25rem;
+  }
+
+  @include breakpoint("tablet") {
+    padding-bottom: 0.75rem;
+    & img {
+      padding: 0.125rem 0.25rem;
+    }
+  }
+
+  @include breakpoint("desktop") {
+    & img {
+      padding: 0.25rem;
+    }
+  }
 }
 
 .text {
   padding: $text-padding;
   width: calc(50% - $text-padding * 2);
   font-size: 1.75rem;
+  width: 100%;
 
   @include breakpoint("desktop") {
     width: calc(25% - $text-padding * 2);

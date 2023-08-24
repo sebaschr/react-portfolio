@@ -8,9 +8,16 @@ const PhotographyPage = () => {
   return (
     <PageBase headingText="Photography" title="Photography">
       <div>
-        <MediaGrid mobileColumns={2} desktopColumns={4} className={styles.grid}>
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
+        <MediaGrid
+          mobileColumns={1}
+          tabletColumns={2}
+          desktopColumns={4}
+          className={styles.grid}
+        >
+          <Media src={require("assets/images/photography/eJT3B9G.jpeg")} />
+          <Media src={require("assets/images/photography/1LiBw1V.jpeg")} />
+          <Media src={require("assets/images/photography/9fpREtZ.jpeg")} />
+          <Media src={require("assets/images/photography/EFGjnaG.jpeg")} />
 
           <Text
             content={
@@ -19,18 +26,14 @@ const PhotographyPage = () => {
             className={styles.text}
           />
 
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
-          <Media src="https://i.imgur.com/JzwLbgV.jpg" />
+          <Media src={require("assets/images/photography/JzwLbgV.jpeg")} />
+          <Media src={require("assets/images/photography/N3ceE2I.jpeg")} />
+          <Media src={require("assets/images/photography/TtnSNYz.jpeg")} />
+          <Media src={require("assets/images/photography/XQnFW6Z.jpeg")} />
+          <Media src={require("assets/images/photography/YFquhNU.jpeg")} />
+          <Media src={require("assets/images/photography/gqvCaPZ.jpeg")} />
+          <Media src={require("assets/images/photography/hPX4cWL.jpeg")} />
+          <Media src={require("assets/images/photography/qRsX2Cz.jpeg")} />
         </MediaGrid>
       </div>
     </PageBase>

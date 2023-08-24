@@ -6,6 +6,7 @@ import { ReactComponent as ArrowUpIcon } from "assets/icons/arrow-up.svg";
 import { ReactComponent as ArrowDownIcon } from "assets/icons/arrow-down.svg";
 import { ReactComponent as GithubIcon } from "assets/icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "assets/icons/linked-in.svg";
+import { ReactComponent as DownloadIcon } from "assets/icons/download.svg";
 
 export const icons = {
     "burger": BurgerIcon,
@@ -15,5 +16,6 @@ export const icons = {
     "arrow-up": ArrowUpIcon,
     "arrow-down": ArrowDownIcon,
     "github": GithubIcon,
-    "linkedin": LinkedInIcon
+    "linkedin": LinkedInIcon,
+    "download": DownloadIcon,
 }

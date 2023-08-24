@@ -50,7 +50,7 @@ export const LINK_TARGET_INTERNAL: LINK_TARGETS = '_self';
 export const BREAKPOINT_TABLET_MIN: number = 768;
 export const BREAKPOINT_DESKTOP_MIN: number = 1024;
 
-export type ICON_NAMES = 'burger' | 'es' | 'en' | 'x' | 'arrow-up' | 'arrow-down' | 'linkedin' | 'github';
+export type ICON_NAMES = 'burger' | 'es' | 'en' | 'x' | 'arrow-up' | 'arrow-down' | 'linkedin' | 'github' | 'download';
 
 //Shapes
 export const SHAPE_BOX: SHAPES = 'box';
@@ -96,10 +96,11 @@ type colors = {
     'grey-light': '#c0c0c0',
     'purple': '#992499',
     'cyan': '#0dafc1'
+    'red': 'red'
 }
 
 
-export type COLOR_VALUES = 'black' | 'white' | 'yellow' | 'grey' | 'grey-opacity' | 'grey-light' | 'purple' | 'cyan';
+export type COLOR_VALUES = 'black' | 'white' | 'yellow' | 'grey' | 'grey-opacity' | 'grey-light' | 'purple' | 'cyan' | 'red';
 
 export const COLOR_BLACK: COLOR_VALUES = 'black';
 export const COLOR_WHITE: COLOR_VALUES = 'white';
@@ -109,6 +110,7 @@ export const COLOR_GREY_OPACITY: COLOR_VALUES = 'grey-opacity';
 export const COLOR_GREY_LIGHT: COLOR_VALUES = 'grey-light';
 export const COLOR_PURPLE: COLOR_VALUES = 'purple';
 export const COLOR_CYAN: COLOR_VALUES = 'cyan';
+export const COLOR_RED: COLOR_VALUES = 'red';
 
 export type THEME_VALUES = 'light' | 'dark' | 'golden';
 

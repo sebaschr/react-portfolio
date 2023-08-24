@@ -87,3 +87,17 @@ export function formatDate(date: Date): string {
 
     return `${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()} `;
 }
+
+const apiKey = process.env.REACT_APP_EMAIL_KEY;
+const apiURL = 'https://emailvalidation.abstractapi.com/v1/?api_key=' + apiKey;
+
+export const checkIfValidEmail = async (email) => {
+    try {
+        const response = await fetch(apiURL + '&email=' + email);
+        const data = await response.json();
+        return data.deliverability;
+    } catch (error) {
+        throw error;
+    }
+}
+

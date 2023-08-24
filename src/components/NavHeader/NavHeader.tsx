@@ -2,13 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./NavHeader.module.scss";
 import { Link, Button } from "components";
 import { reportWindowSize } from "utils/functions";
-import {
-  LINK_TARGET_INTERNAL,
-  SIZE_SM,
-  BUTTON_TRANSPARENT,
-  SIZE_MD,
-  SIZE_LG,
-} from "utils/constants";
+import { LINK_TARGET_INTERNAL, SIZE_SM, SIZE_XL } from "utils/constants";
 import cx from "classnames";
 
 const NavHeader = () => {
@@ -35,7 +29,7 @@ const NavHeader = () => {
             target={LINK_TARGET_INTERNAL}
             href="/"
             linkText="Home"
-            size={SIZE_SM}
+            size={isDesktop ? SIZE_SM : SIZE_XL}
           />
         </li>
         <li className={styles["nav-item"]}>
@@ -43,7 +37,7 @@ const NavHeader = () => {
             target={LINK_TARGET_INTERNAL}
             href="/about"
             linkText="About Me"
-            size={SIZE_SM}
+            size={isDesktop ? SIZE_SM : SIZE_XL}
           />
         </li>
         <li className={styles["nav-item"]}>
@@ -51,7 +45,7 @@ const NavHeader = () => {
             target={LINK_TARGET_INTERNAL}
             href="/experience"
             linkText="Experience"
-            size={SIZE_SM}
+            size={isDesktop ? SIZE_SM : SIZE_XL}
           />
         </li>
         <li className={styles["nav-item"]}>
@@ -59,7 +53,7 @@ const NavHeader = () => {
             target={LINK_TARGET_INTERNAL}
             href="/photography"
             linkText="Photography"
-            size={SIZE_SM}
+            size={isDesktop ? SIZE_SM : SIZE_XL}
           />
         </li>
         <li className={styles["nav-item"]}>
@@ -67,7 +61,7 @@ const NavHeader = () => {
             target={LINK_TARGET_INTERNAL}
             href="/contact"
             linkText="Contact"
-            size={SIZE_SM}
+            size={isDesktop ? SIZE_SM : SIZE_XL}
           />
         </li>
       </ul>
@@ -86,22 +80,26 @@ const NavHeader = () => {
         </div>
       ) : (
         <div className={styles["mobile-container"]}>
-          <Button
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-            className={cx(styles.burger, {
-              [styles["burger--open"]]: isOpen,
+          <div className={styles["nav-container"]}>
+            <Button
+              className={cx(styles["nav-mobile-item"])}
+              variant="link"
+              linkText={isOpen ? "x" : "< home"}
+              size={SIZE_SM}
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              altText={isOpen ? "Close Menu" : "Open Menu"}
+            />
+          </div>
+
+          <div
+            className={cx(styles["mobile-menu"], {
+              [styles["mobile-menu--visible"]]: isOpen,
             })}
-            iconName={"arrow-up"}
-            variant={BUTTON_TRANSPARENT}
-            iconSize={isOpen ? SIZE_MD : SIZE_LG}
-          />
-          {isOpen && (
-            <div>
-              <NavList />
-            </div>
-          )}
+          >
+            <NavList />
+          </div>
         </div>
       )}
     </nav>
