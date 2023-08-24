@@ -281,19 +281,7 @@ const ContactPage = () => {
               className={styles.social}
             />
           </div>
-          <div
-            className={styles.link}
-            onClick={() => {
-              handleDownload("/documents/resume.pdf", "resume.pdf");
-            }}
-          >
-            <Icon name="download" className={styles.icon} size="md" />
-            <Text
-              content="Download Resume"
-              className={styles.social}
-              size="lg"
-            />
-          </div>
+          
         </div>
       </div>
     </PageBase>
