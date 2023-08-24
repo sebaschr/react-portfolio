@@ -17,12 +17,13 @@ const ContactPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const [errors, setErrors] = useState(false);
+  const [errors, setErrors] = useState(true);
 
   const [nameError, setNameError] = useState(false);
   const [subjectError, setSubjectError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const checkForErrors = () => {
     setErrors(true);
@@ -51,7 +52,13 @@ const ContactPage = () => {
       setEmailError(false);
     }
 
-    if (!nameError && !subjectError && !messageError && !emailError) {
+    if (
+      submitted &&
+      !nameError &&
+      !subjectError &&
+      !messageError &&
+      !emailError
+    ) {
       setErrors(false);
     } else {
       setErrors(true);
@@ -70,25 +77,8 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSubmitted(true);
     checkForErrors();
-
-    if (!errors) {
-      emailjs
-        .sendForm(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          form.current,
-          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
   };
 
   return (
