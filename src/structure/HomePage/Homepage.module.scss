@@ -3,7 +3,7 @@
 .column {
   flex-grow: 1;
   height: auto;
-  border-left: solid 1px black;
+  border-left: solid 1px color("black");
   position: relative;
   background-color: rgba(color("black"), 0.65);
 
@@ -34,7 +34,7 @@
 
 .subtitle {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: space(4);
+  left: space(4);
   transform: rotate(90);
 }

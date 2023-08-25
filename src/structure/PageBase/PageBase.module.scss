@@ -1,11 +1,11 @@
 @import "styles";
 
 .main-container {
-  border: solid 1px black;
+  border: solid 1px color("black");
   position: absolute;
   max-width: 1440px;
-  height: calc(100% - 1rem);
-  width: calc(100% - 1rem);
+  height: calc(100% - space(4));
+  width: calc(100% - space(4));
   margin: auto;
   top: 50%;
   left: 50%;
@@ -27,29 +27,29 @@
 
 .heading {
   width: 100%;
-  padding: 2rem 0.5rem;
-  font-size: 2rem;
-  border-bottom: solid 1px black;
+  padding: space(8) space(2);
+  font-size: space(8);
+  border-bottom: solid 1px color("black");
 
   @include breakpoint("tablet") {
-    font-size: 5rem;
+    font-size: space(20);
   }
   @include breakpoint("desktop") {
-    font-size: 7rem;
-    padding: 2rem;
+    font-size: space(28);
+    padding: space(8);
   }
 }
 
 .container {
   display: flex;
-  height: calc(100% - 145px);
+  height: calc(100% - toRem(145px));
   overflow-y: scroll;
 
   @include breakpoint("tablet") {
-    height: calc(100% - 195px);
+    height: calc(100% - toRem(195px));
   }
 
   @include breakpoint("desktop") {
-    height: calc(100% - 95px);
+    height: calc(100% - toRem(95px));
   }
 }

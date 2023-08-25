@@ -2,9 +2,9 @@
 
 .bubble {
   width: auto;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  margin: 0.4rem 0.4rem 0 0;
+  padding: space(2) space(4);
+  border-radius: toRem(5px);
+  margin: space(2) space(2) 0 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -19,8 +19,8 @@
   }
 
   @include breakpoint("desktop") {
-    margin: 0.5rem 0.2rem 0;
-    padding: 0.4rem 1.4rem;
+    margin: space(2) toRem(3.2px) 0;
+    padding: space(2) space(6);
   }
 }
 

@@ -1,13 +1,10 @@
 import React, { useRef, useState } from "react";
-import { Heading, Link, Media, Text, Icon, Loader } from "components";
+import { Heading, Link, Text, Icon, Loader } from "components";
 import { PageBase } from "structure";
 import styles from "./Contact.module.scss";
-import { checkIfValidEmail } from "utils/functions";
 import emailjs from "@emailjs/browser";
 import { LINK_TARGET_EXTERNAL } from "utils/constants";
-import axios from "axios";
 import cx from "classnames";
-import fileDownload from "js-file-download";
 
 const ContactPage = () => {
   const form = useRef();
@@ -16,9 +13,6 @@ const ContactPage = () => {
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  const [errors, setErrors] = useState(true);
-
   const [nameError, setNameError] = useState(false);
   const [subjectError, setSubjectError] = useState(false);
   const [emailError, setEmailError] = useState(false);
@@ -30,8 +24,6 @@ const ContactPage = () => {
   const [loading, setLoading] = useState(false);
 
   const checkForErrors = () => {
-    setErrors(true);
-
     if (name === "") {
       setNameError(true);
     } else {
@@ -63,7 +55,6 @@ const ContactPage = () => {
       !messageError &&
       !emailError
     ) {
-      setErrors(false);
       setLoading(true);
 
       emailjs
@@ -85,18 +76,7 @@ const ContactPage = () => {
           }
         );
     } else {
-      setErrors(true);
     }
-  };
-
-  const handleDownload = (url, filename) => {
-    axios
-      .get(url, {
-        responseType: "blob",
-      })
-      .then((res) => {
-        fileDownload(res.data, filename);
-      });
   };
 
   const sendEmail = (e) => {
@@ -281,7 +261,6 @@ const ContactPage = () => {
               className={styles.social}
             />
           </div>
-          
         </div>
       </div>
     </PageBase>

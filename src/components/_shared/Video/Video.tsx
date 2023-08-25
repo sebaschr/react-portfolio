@@ -2,7 +2,7 @@ import React from "react";
 import BackgroundVideo from "./BackgroundVideo";
 import { VideoPropTypes } from "components/dialogProps";
 import { checkIfValidYoutubeVideo, formatYoutubeUrl } from "utils/functions";
-import Embed from "../Embed";
+import { Embed } from "components";
 
 const Video = ({ src, className, isBackground = false }: VideoPropTypes) => {
   const isYoutube = checkIfValidYoutubeVideo(src);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Media, Heading, Card } from "components";
+import { Text, Media, Heading } from "components";
 import { PageBase } from "structure";
 import styles from "./AboutPage.module.scss";
 import { SIZE_XL } from "utils/constants";

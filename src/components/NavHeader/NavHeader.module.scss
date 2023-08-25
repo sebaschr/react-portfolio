@@ -44,8 +44,8 @@
 
 .nav-mobile-item {
   text-decoration: none;
-  border-bottom: solid 1px black;
-  padding-bottom: 0.25rem;
+  border-bottom: solid 1px color("black");
+  padding-bottom: space(1);
   z-index: 1;
 }
 
@@ -70,7 +70,7 @@
 .nav-item {
   display: flex;
   position: relative;
-  margin: 0.5rem 0;
+  margin: space(2) 0;
   justify-content: center;
 
   & > a {
@@ -90,7 +90,7 @@
       height: 2px;
       left: 5%;
       top: 50%;
-      background-color: black;
+      background-color: color("black");
       transition: 300ms ease-in-out;
       pointer-events: none;
     }

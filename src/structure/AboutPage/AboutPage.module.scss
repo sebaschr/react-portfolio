@@ -22,42 +22,42 @@
     & > p {
       justify-self: flex-end;
       width: 100%;
-      margin: 0.5rem 0;
+      margin: space(2) 0;
 
       &:nth-child(odd) {
         justify-self: flex-start;
       }
 
       @include breakpoint("desktop") {
-        margin: 0.5rem 0;
+        margin: space(2) 0;
         width: 85%;
       }
 
       @include breakpoint("desktop-lg") {
-        margin: 1.5rem 0;
+        margin: space(6) 0;
       }
 
       @include breakpoint("desktop-xl") {
-        margin: 2.5rem 0;
+        margin: space(10) 0;
       }
     }
   }
 
   &--left {
-    margin-bottom: 1rem;
+    margin-bottom: space(4);
   }
 }
 
 .content {
-  padding: 0.5rem;
-  padding-bottom: 2rem;
+  padding: space(4);
+  padding-bottom: space(8);
   width: 95%;
   overflow-y: hidden;
   height: 100%;
   overflow: scroll;
 
   @include breakpoint("desktop") {
-    padding: 2rem;
+    padding: space(8);
   }
 }
 
@@ -80,19 +80,19 @@
   position: absolute;
   height: 20rem;
   width: 17rem;
-  right: 5rem;
-  top: 10rem;
+  right: space(20);
+  top: space(40);
 
   &--center {
     position: absolute;
     top: 50%;
-    right: 7rem;
-    top: 12rem;
+    right: space(28);
+    top: space(48);
   }
 
   &--bottom {
     position: absolute;
-    right: 9rem;
-    top: 14rem;
+    right: space(36);
+    top: space(56);
   }
 }
