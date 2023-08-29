@@ -1,20 +1,8 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.80f944ea.css",
-    "main.js": "/react-portfolio/static/js/main.3e5cc2ca.js",
+    "main.css": "/react-portfolio/static/css/main.7ef724d0.css",
+    "main.js": "/react-portfolio/static/js/main.ede4c83f.js",
     "static/js/787.44e83b79.chunk.js": "/react-portfolio/static/js/787.44e83b79.chunk.js",
-    "static/media/EFGjnaG.jpeg": "/react-portfolio/static/media/EFGjnaG.5f28e2f900bf7b6db2fc.jpeg",
-    "static/media/gqvCaPZ.jpeg": "/react-portfolio/static/media/gqvCaPZ.1e66f60a66836d40c989.jpeg",
-    "static/media/N3ceE2I.jpeg": "/react-portfolio/static/media/N3ceE2I.c61a3b55d0692b2a5acb.jpeg",
-    "static/media/XQnFW6Z.jpeg": "/react-portfolio/static/media/XQnFW6Z.fd12533101e13d9528e5.jpeg",
-    "static/media/JzwLbgV.jpeg": "/react-portfolio/static/media/JzwLbgV.67075b483f6c43ccea89.jpeg",
-    "static/media/hPX4cWL.jpeg": "/react-portfolio/static/media/hPX4cWL.5f709cc6ed429dc9ec98.jpeg",
-    "static/media/qRsX2Cz.jpeg": "/react-portfolio/static/media/qRsX2Cz.c64d9ef6aea1a1be0da2.jpeg",
-    "static/media/1LiBw1V.jpeg": "/react-portfolio/static/media/1LiBw1V.048121737108b043e0bd.jpeg",
-    "static/media/9fpREtZ.jpeg": "/react-portfolio/static/media/9fpREtZ.ff69724b0cee8bd197d5.jpeg",
-    "static/media/TtnSNYz.jpeg": "/react-portfolio/static/media/TtnSNYz.e57a8a8e048037a191da.jpeg",
-    "static/media/YFquhNU.jpeg": "/react-portfolio/static/media/YFquhNU.cd63bcd434ef2e9a8114.jpeg",
-    "static/media/eJT3B9G.jpeg": "/react-portfolio/static/media/eJT3B9G.39472e554bdbb9643f38.jpeg",
     "static/media/RobotoMono-BoldItalic.ttf": "/react-portfolio/static/media/RobotoMono-BoldItalic.bcd926c36a85f46b3eeb.ttf",
     "static/media/RobotoMono-Italic.ttf": "/react-portfolio/static/media/RobotoMono-Italic.2d42f17317bca2bd3860.ttf",
     "static/media/RobotoMono-LightItalic.ttf": "/react-portfolio/static/media/RobotoMono-LightItalic.5f7ce26f769b4456ae6f.ttf",
@@ -31,12 +19,12 @@
     "static/media/burger-icon.svg": "/react-portfolio/static/media/burger-icon.cda3f71c20e9c2932fe55b65d6ea352d.svg",
     "static/media/arrow-down.svg": "/react-portfolio/static/media/arrow-down.04b1f0952c57022b558636ace50597aa.svg",
     "static/media/linked-in.svg": "/react-portfolio/static/media/linked-in.846dcfdb81242ef54dfc3973f3531f31.svg",
-    "main.80f944ea.css.map": "/react-portfolio/static/css/main.80f944ea.css.map",
-    "main.3e5cc2ca.js.map": "/react-portfolio/static/js/main.3e5cc2ca.js.map",
+    "main.7ef724d0.css.map": "/react-portfolio/static/css/main.7ef724d0.css.map",
+    "main.ede4c83f.js.map": "/react-portfolio/static/js/main.ede4c83f.js.map",
     "787.44e83b79.chunk.js.map": "/react-portfolio/static/js/787.44e83b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80f944ea.css",
-    "static/js/main.3e5cc2ca.js"
+    "static/css/main.7ef724d0.css",
+    "static/js/main.ede4c83f.js"
   ]
 }
