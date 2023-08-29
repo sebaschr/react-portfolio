@@ -1,5 +1,9 @@
 @import "styles";
 
+.parent-container {
+  overflow-y: auto;
+}
+
 .container {
   position: relative;
   height: calc(100% - 10px);
@@ -51,10 +55,11 @@
 .content {
   padding: space(4);
   padding-bottom: space(8);
-  width: 95%;
-  overflow-y: hidden;
+  width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
 
   @include breakpoint("desktop") {
     padding: space(8);

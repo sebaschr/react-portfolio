@@ -3,12 +3,12 @@
 $text-padding: space(4);
 
 .grid {
-  overflow: scroll;
   justify-content: flex-start;
   padding: space(1);
   height: 100%;
   justify-content: flex-start;
   margin: auto;
+  overflow: hidden;
 
   & img {
     padding-bottom: space(1);

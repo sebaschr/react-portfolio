@@ -29,7 +29,11 @@ const SectionImage = ({
 
 const HomePage = () => {
   return (
-    <PageBase headingText="Seb Chacon" title="Seb Chacon">
+    <PageBase
+      headingText="Seb Chacon"
+      title="Seb Chacon"
+      className={styles["parent-container"]}
+    >
       <div className={styles["column-container"]}>
         <SectionImage
           linkHref="/about"

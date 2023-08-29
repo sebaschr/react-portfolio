@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { Container, Heading, NavHeader } from "components";
+import { Container, Heading, NavHeader, Spacer } from "components";
 import styles from "./PageBase.module.scss";
-import { onlyChildren } from "components/dialogProps/sharedProps";
+import { classNameandChildren } from "components/dialogProps/sharedProps";
+import cx from "classnames";
 
 type PageBasePropTypes = {
   headingText: string;
@@ -12,7 +13,8 @@ const PageBase = ({
   children,
   headingText,
   title,
-}: onlyChildren & PageBasePropTypes) => {
+  className,
+}: classNameandChildren & PageBasePropTypes) => {
   useEffect(() => {
     document.title = title;
   });
@@ -21,13 +23,15 @@ const PageBase = ({
     <>
       <Container isFullWidth className={styles["main-container"]}>
         <NavHeader />
-        <div className={styles.root}>
+
+        <div className={cx(styles.container, styles["heading-container"])}>
           <Heading
             content={headingText}
             headingStyle="h1"
             className={styles.heading}
           />
-          <div className={styles.container}>{children}</div>
+          <Spacer className={styles.spacer} />
+          {children}
         </div>
       </Container>
     </>

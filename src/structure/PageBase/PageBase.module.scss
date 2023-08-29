@@ -10,46 +10,42 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
   padding: 0;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  @include breakpoint("desktop") {
+    flex-direction: row;
+  }
 }
 
-.root {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  flex-grow: 1;
-  width: 100%;
-  padding: 0;
-  max-width: 100%;
+.container {
+  padding: space(8) space(2);
+  width: calc(100% - space(4));
+  overflow-y: scroll;
+  margin: 0;
+
+  @include breakpoint("desktop") {
+    padding: space(8);
+    width: calc(100% - space(16));
+  }
 }
 
 .heading {
   width: 100%;
-  padding: space(8) space(2);
   font-size: space(8);
-  border-bottom: solid 1px color("black");
+  margin-top: 1rem;
+  position: relative;
 
   @include breakpoint("tablet") {
     font-size: space(20);
   }
   @include breakpoint("desktop") {
     font-size: space(28);
-    padding: space(8);
   }
 }
 
-.container {
-  display: flex;
-  height: calc(100% - toRem(145px));
-  overflow-y: scroll;
-
-  @include breakpoint("tablet") {
-    height: calc(100% - toRem(195px));
-  }
-
-  @include breakpoint("desktop") {
-    height: calc(100% - toRem(95px));
-  }
+.spacer {
+  margin: space(8) 0;
 }

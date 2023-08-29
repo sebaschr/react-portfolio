@@ -3,8 +3,7 @@
 .root {
   position: relative;
   width: 100%;
-  background-color: transparent;
-  z-index: 1200;
+  background-color: white;
   justify-content: center;
 
   @include breakpoint("desktop") {
@@ -87,7 +86,7 @@
       content: "";
       position: absolute;
       width: 0%;
-      height: 2px;
+      height: 1px;
       left: 5%;
       top: 50%;
       background-color: color("black");

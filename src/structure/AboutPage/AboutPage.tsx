@@ -24,7 +24,11 @@ const RepeatComponent = ({
 
 const AboutPage = () => {
   return (
-    <PageBase headingText="About Me" title="About Me">
+    <PageBase
+      headingText="About Me"
+      title="About Me"
+      className={styles["parent-container"]}
+    >
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles["container--left"]}>

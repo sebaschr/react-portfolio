@@ -2,7 +2,7 @@ import React from "react";
 import { Heading, Text, CategoryBubble } from "components";
 import { PageBase } from "structure";
 import styles from "./Experience.module.scss";
-import { COLOR_CYAN, COLOR_GREY, SIZE_LG } from "utils/constants";
+import { COLOR_GREY, COLOR_YELLOW, SIZE_LG } from "utils/constants";
 import { formatDate } from "utils/functions";
 import { getSkillById } from "services/data";
 
@@ -13,13 +13,20 @@ const ExperiencePage = () => {
     return (
       <div className={styles.skills}>
         {bubbles.map((i) => (
-          <CategoryBubble text={getSkillById(i)} backgroundColor={COLOR_CYAN} />
+          <CategoryBubble
+            text={getSkillById(i)}
+            backgroundColor={COLOR_YELLOW}
+          />
         ))}
       </div>
     );
   };
   return (
-    <PageBase headingText="Experience" title="Experience">
+    <PageBase
+      headingText="Experience"
+      title="Experience"
+      className={styles["parent-container"]}
+    >
       <div className={styles.container}>
         <div className={styles.introduction}>
           <Text
