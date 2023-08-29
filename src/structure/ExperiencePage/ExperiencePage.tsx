@@ -1,8 +1,21 @@
 import React from "react";
-import { Heading, Text, CategoryBubble } from "components";
+import {
+  Heading,
+  Text,
+  CategoryBubble,
+  Media,
+  Link,
+  MediaGrid,
+} from "components";
 import { PageBase } from "structure";
 import styles from "./Experience.module.scss";
-import { COLOR_GREY, COLOR_YELLOW, SIZE_LG } from "utils/constants";
+import {
+  BUTTON_PRIMARY,
+  COLOR_GREY,
+  COLOR_YELLOW,
+  LINK_TARGET_EXTERNAL,
+  SIZE_LG,
+} from "utils/constants";
 import { formatDate } from "utils/functions";
 import { getSkillById } from "services/data";
 
@@ -22,11 +35,7 @@ const ExperiencePage = () => {
     );
   };
   return (
-    <PageBase
-      headingText="Experience"
-      title="Experience"
-      className={styles["parent-container"]}
-    >
+    <PageBase headingText="Experience" title="Experience">
       <div className={styles.container}>
         <div className={styles.introduction}>
           <Text
@@ -73,7 +82,30 @@ const ExperiencePage = () => {
                 content={work.jobDescription}
               />
 
-              {work.skills.length > 0 && renderBubbles(work.skills)}
+              <div className={styles["bottom-container"]}>
+                {work.skills.length > 0 && renderBubbles(work.skills)}
+                <div className={styles.refs}>
+                  {work.urls.length > 0 &&
+                    work.urls.map((url, i) => (
+                      <Link
+                        linkText={url.name}
+                        href={url.url}
+                        target={LINK_TARGET_EXTERNAL}
+                        className={styles.link}
+                      />
+                    ))}
+                </div>
+              </div>
+              <MediaGrid
+                desktopColumns={2}
+                mobileColumns={2}
+                className={styles.media}
+              >
+                {work.assets.length > 0 &&
+                  work.assets.map((asset, i) => <Media src={asset} />)}
+              </MediaGrid>
+
+              <div></div>
             </div>
           ))}
         </div>

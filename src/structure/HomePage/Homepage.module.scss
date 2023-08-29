@@ -8,23 +8,40 @@
 .column {
   flex-grow: 1;
   height: auto;
-  border-left: solid 1px color("black");
+  border: solid 1px color("black");
+  border-left: 0;
   position: relative;
-  background-color: rgba(color("black"), 0.65);
+  overflow: hidden;
 
   &:first-child {
-    border-left: solid 1px transparent;
+    border-left: solid 1px black;
+  }
+
+  img {
+    transform: translateY(100%);
+    transition: transform ease-in-out 0.35s;
+  }
+
+  div {
+    color: color("black");
+    transition: color ease-in-out 0.35s;
   }
 
   &:hover {
-    background-color: rgba(color("black"), 0.55);
-    transition: background-color transform 0.35s;
+    img {
+      transition: transform ease-in-out 1.2s;
+      transform: scale(1.25) translateY(0);
+    }
+    div {
+      color: white;
+      transition: color ease-in-out 0.35s;
+    }
   }
 
   &-container {
     display: flex;
     width: 100%;
-    height: auto;
+    height: calc(100% - 130px);
     flex-grow: 1;
     padding: 0;
     margin: 0;

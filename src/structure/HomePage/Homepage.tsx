@@ -2,7 +2,7 @@ import React from "react";
 import { Heading, Link, Media } from "components";
 import { PageBase } from "structure";
 import styles from "./Homepage.module.scss";
-import { COLOR_WHITE, LINK_TARGET_INTERNAL } from "utils/constants";
+import { COLOR_BLACK, LINK_TARGET_INTERNAL } from "utils/constants";
 import { onlyChildren } from "components/dialogProps/sharedProps";
 
 type SectionImagePropTypes = {
@@ -32,6 +32,7 @@ const HomePage = () => {
     <PageBase
       headingText="Seb Chacon"
       title="Seb Chacon"
+      noSpacer
       className={styles["parent-container"]}
     >
       <div className={styles["column-container"]}>
@@ -41,8 +42,8 @@ const HomePage = () => {
         >
           <Heading
             content="About Me"
-            color={COLOR_WHITE}
-            headingStyle="h4"
+            color={COLOR_BLACK}
+            headingStyle="h5"
             className={styles.subtitle}
           />
         </SectionImage>
@@ -52,8 +53,8 @@ const HomePage = () => {
         >
           <Heading
             content="Experience"
-            color={COLOR_WHITE}
-            headingStyle="h4"
+            color={COLOR_BLACK}
+            headingStyle="h5"
             className={styles.subtitle}
           />
         </SectionImage>
@@ -63,8 +64,8 @@ const HomePage = () => {
         >
           <Heading
             content="Photography"
-            color={COLOR_WHITE}
-            headingStyle="h4"
+            color={COLOR_BLACK}
+            headingStyle="h5"
             className={styles.subtitle}
           />
         </SectionImage>
@@ -74,8 +75,8 @@ const HomePage = () => {
         >
           <Heading
             content="Contact"
-            color={COLOR_WHITE}
-            headingStyle="h4"
+            color={COLOR_BLACK}
+            headingStyle="h5"
             className={styles.subtitle}
           />
         </SectionImage>

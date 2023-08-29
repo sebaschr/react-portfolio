@@ -29,7 +29,7 @@ $text-padding: space(4);
 }
 
 .text {
-  padding: $text-padding;
+  padding: $text-padding * 3 $text-padding;
   width: calc(50% - $text-padding * 2);
   font-size: 1.75rem;
   width: 100%;

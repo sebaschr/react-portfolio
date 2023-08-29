@@ -44,7 +44,7 @@
     }
 
     @include breakpoint("desktop") {
-        padding: space(8);
+        padding: space(2) space(8);
         border: 0;
 
         &:first-child {
@@ -69,4 +69,32 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 1rem;
+
+    @include breakpoint("tablet") {
+        margin-bottom: 0;
+    }
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    justify-content: center;
+
+    @include breakpoint("tablet") {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.link {
+    text-decoration: underline;
+
+    @include breakpoint("tablet") {
+        margin-top: 0;
+    }
+}
+.media {
+    margin-top: space(8);
 }
