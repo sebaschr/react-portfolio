@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.7ef724d0.css",
-    "main.js": "/react-portfolio/static/js/main.ede4c83f.js",
+    "main.js": "/react-portfolio/static/js/main.1645e739.js",
     "static/js/787.44e83b79.chunk.js": "/react-portfolio/static/js/787.44e83b79.chunk.js",
     "static/media/RobotoMono-BoldItalic.ttf": "/react-portfolio/static/media/RobotoMono-BoldItalic.bcd926c36a85f46b3eeb.ttf",
     "static/media/RobotoMono-Italic.ttf": "/react-portfolio/static/media/RobotoMono-Italic.2d42f17317bca2bd3860.ttf",
@@ -20,11 +20,11 @@
     "static/media/arrow-down.svg": "/react-portfolio/static/media/arrow-down.04b1f0952c57022b558636ace50597aa.svg",
     "static/media/linked-in.svg": "/react-portfolio/static/media/linked-in.846dcfdb81242ef54dfc3973f3531f31.svg",
     "main.7ef724d0.css.map": "/react-portfolio/static/css/main.7ef724d0.css.map",
-    "main.ede4c83f.js.map": "/react-portfolio/static/js/main.ede4c83f.js.map",
+    "main.1645e739.js.map": "/react-portfolio/static/js/main.1645e739.js.map",
     "787.44e83b79.chunk.js.map": "/react-portfolio/static/js/787.44e83b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ef724d0.css",
-    "static/js/main.ede4c83f.js"
+    "static/js/main.1645e739.js"
   ]
 }
