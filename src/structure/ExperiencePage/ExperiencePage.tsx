@@ -97,7 +97,7 @@ const ExperiencePage = () => {
               </div>
               <MediaGrid
                 desktopColumns={2}
-                mobileColumns={2}
+                mobileColumns={1}
                 className={styles.media}
               >
                 {work.assets.length > 0 &&
