@@ -10,7 +10,6 @@ import {
 import { PageBase } from "structure";
 import styles from "./Experience.module.scss";
 import {
-  BUTTON_PRIMARY,
   COLOR_GREY,
   COLOR_YELLOW,
   LINK_TARGET_EXTERNAL,

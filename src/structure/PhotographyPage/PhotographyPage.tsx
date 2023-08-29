@@ -22,7 +22,7 @@ const PhotographyPage = () => {
             images.map((image, i) => (
               <>
                 <Media src={image.src} />
-                {i == 3 && (
+                {i === 3 && (
                   <Text
                     content={
                       "I recently backpacked Europe, here are some photos I took along the trip. Before this I didn't really know I was this much into photography or media production, but it's definitely something I'd love to get more into in a near future."
