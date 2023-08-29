@@ -33,6 +33,7 @@ const PageBase = ({
             styles["heading-container"],
             className
           )}
+          id="page-base-container"
         >
           <Heading
             content={headingText}
