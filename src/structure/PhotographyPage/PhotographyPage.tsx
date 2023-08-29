@@ -1,25 +1,57 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Media, MediaGrid, Text } from "components";
 import { PageBase } from "structure";
 import { images } from "services/data";
 import styles from "./Photography.module.scss";
 
 const PhotographyPage = () => {
+  const imageCounter = 16;
+  const [imageList, setImageList] = useState(images.slice(0, imageCounter));
+
+  const photosRef = useRef<HTMLDivElement>(null);
+
+  function handleScroll(e: Event) {
+    if (e.target) {
+      var element = e.target as HTMLElement;
+      const { scrollHeight, scrollTop, clientHeight } = element;
+
+      if (Math.abs(scrollHeight - clientHeight - scrollTop) <= 1) {
+        if (images.length > imageList.length) {
+          setTimeout(() => {
+            setImageList(images.slice(0, imageList.length + imageCounter));
+          }, 200);
+        }
+      }
+    }
+  }
+
+  useEffect(() => {
+    // Everything around if statement
+    const element = document.getElementById("page-base-container");
+    if (element) {
+      element.addEventListener("scroll", handleScroll);
+
+      return () => {
+        element.removeEventListener("scroll", handleScroll);
+      };
+    }
+  });
+
   return (
     <PageBase
       headingText="Photography"
       title="Photography"
       className={styles["parent-container"]}
     >
-      <div>
+      <div ref={photosRef}>
         <MediaGrid
           mobileColumns={2}
           tabletColumns={4}
           desktopColumns={4}
           className={styles.grid}
         >
-          {images.length > 0 &&
-            images.map((image, i) => (
+          {imageList.length > 0 &&
+            imageList.map((image, i) => (
               <>
                 <Media src={image.src} />
                 {i === 3 && (
