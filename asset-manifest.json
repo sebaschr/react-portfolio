@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.7ef724d0.css",
+    "main.css": "/react-portfolio/static/css/main.d9c5fff4.css",
     "main.js": "/react-portfolio/static/js/main.1645e739.js",
     "static/js/787.44e83b79.chunk.js": "/react-portfolio/static/js/787.44e83b79.chunk.js",
     "static/media/RobotoMono-BoldItalic.ttf": "/react-portfolio/static/media/RobotoMono-BoldItalic.bcd926c36a85f46b3eeb.ttf",
@@ -19,12 +19,12 @@
     "static/media/burger-icon.svg": "/react-portfolio/static/media/burger-icon.cda3f71c20e9c2932fe55b65d6ea352d.svg",
     "static/media/arrow-down.svg": "/react-portfolio/static/media/arrow-down.04b1f0952c57022b558636ace50597aa.svg",
     "static/media/linked-in.svg": "/react-portfolio/static/media/linked-in.846dcfdb81242ef54dfc3973f3531f31.svg",
-    "main.7ef724d0.css.map": "/react-portfolio/static/css/main.7ef724d0.css.map",
+    "main.d9c5fff4.css.map": "/react-portfolio/static/css/main.d9c5fff4.css.map",
     "main.1645e739.js.map": "/react-portfolio/static/js/main.1645e739.js.map",
     "787.44e83b79.chunk.js.map": "/react-portfolio/static/js/787.44e83b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ef724d0.css",
+    "static/css/main.d9c5fff4.css",
     "static/js/main.1645e739.js"
   ]
 }
