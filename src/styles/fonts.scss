@@ -3,17 +3,16 @@
 @font-face {
     font-family: "RobotoMono";
     src: url("../assets/fonts/RobotoMono-Regular.ttf") format("truetype");
-    font-weight:400;
-    font-style:normal ;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoMono";
     src: url("../assets/fonts/RobotoMono-Italic.ttf") format("truetype");
-    font-weight:400;
+    font-weight: 400;
     font-style: italic;
 }
-
 
 //Bold
 
@@ -48,5 +47,21 @@
 }
 
 @mixin text-basic {
-    font-family: "RobotoMono", monospace;
+    font-family: "GlacialIndif", monospace;
+}
+
+//GlacialIndifference
+
+@font-face {
+    font-family: "GlacialIndif";
+    src: url("../assets/fonts/GlacialIndifference-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GlacialIndif";
+    src: url("../assets/fonts/GlacialIndifference-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
 }
