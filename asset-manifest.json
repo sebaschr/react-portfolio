@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d9c5fff4.css",
-    "main.js": "/react-portfolio/static/js/main.1645e739.js",
+    "main.css": "/react-portfolio/static/css/main.bb3282bf.css",
+    "main.js": "/react-portfolio/static/js/main.f197ccc3.js",
     "static/js/787.44e83b79.chunk.js": "/react-portfolio/static/js/787.44e83b79.chunk.js",
     "static/media/RobotoMono-BoldItalic.ttf": "/react-portfolio/static/media/RobotoMono-BoldItalic.bcd926c36a85f46b3eeb.ttf",
     "static/media/RobotoMono-Italic.ttf": "/react-portfolio/static/media/RobotoMono-Italic.2d42f17317bca2bd3860.ttf",
@@ -10,21 +10,23 @@
     "static/media/RobotoMono-Bold.ttf": "/react-portfolio/static/media/RobotoMono-Bold.00dee75ee52cf07cfb24.ttf",
     "static/media/RobotoMono-Regular.ttf": "/react-portfolio/static/media/RobotoMono-Regular.28198c367ffb8695d481.ttf",
     "static/media/spain-flag.svg": "/react-portfolio/static/media/spain-flag.bd3fd9a0ccf7ed246e3d6ed603f00867.svg",
+    "static/media/GlacialIndifference-Regular.otf": "/react-portfolio/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
+    "static/media/GlacialIndifference-Bold.otf": "/react-portfolio/static/media/GlacialIndifference-Bold.e742f534cb2ac8b560c6.otf",
     "static/media/uk-flag.svg": "/react-portfolio/static/media/uk-flag.8411a74a2d01099b9cd827dcba16a600.svg",
-    "static/media/github.svg": "/react-portfolio/static/media/github.39a426071ee083647048f13456c5254d.svg",
-    "static/media/arrow-up.svg": "/react-portfolio/static/media/arrow-up.4073c87ad2674fd0334a18bf0ea89ca7.svg",
+    "static/media/github.svg": "/react-portfolio/static/media/github.a8201ad6ccd9869d0feeae08e59daed9.svg",
+    "static/media/arrow-up.svg": "/react-portfolio/static/media/arrow-up.49e17c81ff4cd471d212238b66a4cf77.svg",
     "static/media/download.svg": "/react-portfolio/static/media/download.83ea55c49bc2f6afb83c1e87f12c4382.svg",
     "index.html": "/react-portfolio/index.html",
-    "static/media/x.svg": "/react-portfolio/static/media/x.9324c0a1f3553314d799ac05ac8e56e6.svg",
-    "static/media/burger-icon.svg": "/react-portfolio/static/media/burger-icon.cda3f71c20e9c2932fe55b65d6ea352d.svg",
+    "static/media/x.svg": "/react-portfolio/static/media/x.d0d7bf0ac9cfa9040512f54feee09712.svg",
+    "static/media/burger-icon.svg": "/react-portfolio/static/media/burger-icon.a004fbd77944aa6df7ab3c5f93d4360b.svg",
     "static/media/arrow-down.svg": "/react-portfolio/static/media/arrow-down.04b1f0952c57022b558636ace50597aa.svg",
-    "static/media/linked-in.svg": "/react-portfolio/static/media/linked-in.846dcfdb81242ef54dfc3973f3531f31.svg",
-    "main.d9c5fff4.css.map": "/react-portfolio/static/css/main.d9c5fff4.css.map",
-    "main.1645e739.js.map": "/react-portfolio/static/js/main.1645e739.js.map",
+    "static/media/linked-in.svg": "/react-portfolio/static/media/linked-in.7c13551dcf3a9f70e5d5a89c4a2091ce.svg",
+    "main.bb3282bf.css.map": "/react-portfolio/static/css/main.bb3282bf.css.map",
+    "main.f197ccc3.js.map": "/react-portfolio/static/js/main.f197ccc3.js.map",
     "787.44e83b79.chunk.js.map": "/react-portfolio/static/js/787.44e83b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9c5fff4.css",
-    "static/js/main.1645e739.js"
+    "static/css/main.bb3282bf.css",
+    "static/js/main.f197ccc3.js"
   ]
 }
